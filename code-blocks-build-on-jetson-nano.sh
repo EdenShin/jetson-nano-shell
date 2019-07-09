@@ -1,3 +1,7 @@
+sudo apt-get install libwxgtk2.8-dev
+sudo apt-get install libwxgtk2.8-0
+# There is a fuck release problem. Fuck it
+
 wget http://sourceforge.net/projects/codeblocks/files/Sources/17.12/codeblocks_17.12.tar.xz
 tar -xf codeblocks_17.12.tar.xz && mv codeblocks-17.12 codeblocks
 
