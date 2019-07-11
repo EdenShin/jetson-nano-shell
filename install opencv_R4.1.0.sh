@@ -1,5 +1,9 @@
 sudo echo"deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu xenial main restricted universe multiverse" >> /etc/apt/sourcelist
 
+echo "export CUBA_HOME=/usr/local/cuda-10.0 \
+	export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH \
+	export PATH=/usr/local/cuda-10.0/bin:$PATH" >> ~/.bashrc
+
 sudo apt update
 
 sudo apt-get install -y build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev python2.7-dev python3.6-dev python-dev python-numpy python3-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev libv4l-dev v4l-utils qv4l2 v4l2ucp wget
