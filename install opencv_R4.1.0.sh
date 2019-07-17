@@ -49,3 +49,5 @@ sudo ldconfig
 
 echo "** Install dldt successfully"
 echo "** Bye :)"
+
+sudo apt install libgoogle-glog-dev libatlas-base-dev
