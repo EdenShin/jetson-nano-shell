@@ -34,6 +34,7 @@ echo "** newt build opencv/dldt :)"
 cd ../../dldt-2019_R1.1/inference-engine
 mkdir build && cd build
 
+sudo apt install libusb-1.0-0-dev -y
 cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_MKL_DNN=OFF -DENABLE_GNA=OFF -DENABLE_SSE42=OFF -DTHREADING=SEQ -DENABLE_CLDNN=OFF ..
 
 make -j$(nproc)
