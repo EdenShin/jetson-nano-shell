@@ -38,6 +38,8 @@ sudo apt install libusb-1.0-0-dev -y
 cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_MKL_DNN=OFF -DENABLE_GNA=OFF -DENABLE_SSE42=OFF -DTHREADING=SEQ -DENABLE_CLDNN=OFF ..
 
 make -j$(nproc)
+sudo make install
+
 sudo usermod -aG users "$(whoami)"
 cd ../../
 wget https://software.intel.com/sites/default/files/managed/05/1a/Setup%20Additional%20Files%20Package.tar.gz udev.tar.gz
